@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head type="html/JavaScript">
+    <base href="/" />
     <title>Socket.IO chat</title>
     <style>
       body { margin: 0; padding-bottom: 3rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
@@ -13,6 +14,8 @@
       #messages { list-style-type: none; margin: 0; padding: 0; }
       #messages > li { padding: 0.5rem 1rem; }
       #messages > li:nth-child(odd) { background: #efefef; }
+
+      
     </style>
   </head>
   <body>
@@ -23,10 +26,13 @@
       <input id='input' autocomplete="off" />
       <button>Send</button>
     </form>
+
+
+
 <!-- exposes an 'io' global then connect -->
-    <script src="node_modules/socket.io/client-dist/socket.io.js"></script> 
-    
-    <script>
+<!-- <script src="/socket.io/socket.io.js"></script>  -->
+    <script src="/node_modules/socket.io/client-dist/socket.io.js">
+
         var socket = io();
 
         var messages = document.getElementById('messages');
