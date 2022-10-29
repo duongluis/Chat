@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head type="html/JavaScript">
-    <base href="/" />
+  <head>
+    <!-- <base href="/" /> -->
     <title>Socket.IO chat</title>
     <style>
       body { margin: 0; padding-bottom: 3rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
@@ -30,8 +30,11 @@
 
 
 <!-- exposes an 'io' global then connect -->
-<!-- <script src="/socket.io/socket.io.js"></script>  -->
-    <script src="/node_modules/socket.io/client-dist/socket.io.js">
+      <script src="/socket.io/socket.io.js"></script> 
+
+    <!-- <script src="/node_modules/socket.io/client-dist/socket.io.js"></script>-->
+      
+      <script src="/socket.io/socket.io.js">
 
         var socket = io();
 
